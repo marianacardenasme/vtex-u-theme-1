@@ -1,15 +1,20 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "rich-text#home__texto"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  "rich-text#home__texto": {
+    "title": "Texto de Home",
+    "props": {
+
+      "blockClass": "home__texto",                 //Clase modificada por el desarrollador para personalizar estilos.
+
+      "text": "![B2B Commerce](assets/img/b2b-commerce-cover-desktop-1.jpg) \n # Bienvenidos a VTEX University \n El lugar donde aprenderemos todo lo necesario para hacer cosas geniales en esta increíble plataforma. \n ## Te invitamos a la nueva era con VTEX IO. \n At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. \n\n [Haz click aquí](/)",
+
+      "textAlignment": "CENTER",                   //Alineación del texto.
+      "textPosition": "CENTER"                     //Posición de todo el cajón relacionado a su elemento padre.
+      
     }
   }
 }
