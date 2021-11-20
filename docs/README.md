@@ -95,3 +95,8 @@ Store framework es la base para crear cualquier tienda usando _VTEX IO Web Frame
 ### Dependencias Peer store component 
 
 ### Dependencias Custom component 
+
+### Desarrollos realizados en el tema:
+
+1. Se prepara la base del tema
+2. Se instala el builder assets para trabajo de imágenes
