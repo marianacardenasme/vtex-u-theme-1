@@ -1,22 +1,76 @@
 {
   "store.home": { 
     "blocks": [
-      "image#home__image"
+      "slider-layout#home__slider--children",
+      "list-context.image-list#home__slider--list"
     ]
   },
-  "image#home__image": { 
-    "title": "Imagen de Home",                                  // Título de bloque.
-    "props": {        
-      "src": "assets/img/b2b-commerce-cover-desktop-1.jpg",     // Source de la imágen.
-      "maxWidth": 600,                                          // Ancho máximo de la imágen.
-      "title": "B2B Commerce",                                  // Título que saldrá al hacer hover en la imágen.
-      "blockClass": "home__image",                              // Clase personalizada.
-
-      "link": {                                                 // Objeto que determina las características de la imágen.
-        "url": "https://www.google.com/",
-        "newTab": true,
-        "attributeNofollow": true
+  "slider-layout#home__slider--children": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "home__slider",
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
       }
+    },
+    "children": [
+      "image#home__slider--one", 
+      "image#home__slider--two", 
+      "image#home__slider--three"
+    ]
+  },
+  "image#home__slider--one": {
+    "props": {
+      "src": "assets/img/main-slide-1.jpg"
+    }
+  }, 
+  "image#home__slider--two": {
+    "props": {
+      "src": "assets/img/main-slide-2.jpg"
+    }
+  }, 
+  "image#home__slider--three": {
+    "props": {
+      "src": "assets/img/main-slide-3.jpg"
+    }
+  },
+  "list-context.image-list#home__slider--list": {
+    "children": ["slider-layout#home__slider--list"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/img/main-slide-1.jpg",
+          "description": "something something"
+        },
+        {
+          "image": "assets/img/main-slide-2.jpg",
+          "description": "something something"
+        },
+        {
+          "image": "assets/img/main-slide-3.jpg",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  "slider-layout#home__slider--list": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "home__slider"
     }
   }
 }
