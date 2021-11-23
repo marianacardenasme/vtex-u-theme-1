@@ -1,0 +1,20 @@
+{
+  "store.home": { 
+    "blocks": [
+      "flex-layout.row#home__section--quienes-somos",
+      "flex-layout.row#home__section--beneficios",
+      "flex-layout.row#home__section--promo-del-mes"
+    ],
+    "props": {
+      "blockClass": ["home__section", "home__section--one"]
+    }
+  },
+  "flex-layout.row#home__section--promo-del-mes": {
+    "children": [
+
+    ],"props": {
+      "blockClass": ["home__section", "home__section--three"]
+  
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "flex-layout.row#home__section--quienes-somos": {
+    "title": "Sección Quienes Somos",
+    "children": [
+      "flex-layout.col#section__quienes-somos--image",
+      "flex-layout.col#section__quienes-somos--text"
+    ],
+    "props": {
+      "blockClass": ["home__section", "home__section--one"],
+      "paddingBottom": 7
+    }
+  },
+  "flex-layout.col#section__quienes-somos--image": {
+    "children": ["image#home__image"]
+  },
+  "image#home__image": {
+    "title": "Imagen Quienes Somos", // Título de bloque.
+    "props": {
+      "src": "assets/img/b2b-commerce-cover-desktop-1.jpg", // Source de la imágen.
+      "maxWidth": 600, // Ancho máximo de la imágen.
+      "title": "B2B Commerce", // Título que saldrá al hacer hover en la imágen.
+      "blockClass": "home__image", // Clase personalizada.
+
+      "link": {
+        // Objeto que determina las características de la imágen.
+        "url": "https://www.google.com/",
+        "newTab": true,
+        "attributeNofollow": true
+      }
+    }
+  },
+  "flex-layout.col#section__quienes-somos--text": {
+    "children": [
+      "rich-text#quienes-somos__text--title",
+      "rich-text#quienes-somos__text--paragraph"
+    ]
+  },
+  "rich-text#quienes-somos__text--title": {
+    "props": {
+      "text": "## ¿Quiénes somos?",
+      "blockClass": "title__one"
+    }
+  },
+  "rich-text#quienes-somos__text--paragraph": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque, lectus sed pulvinar varius, est neque aliquet arcu, molestie semper nibh ante non ipsum. Nullam sapien sem, scelerisque id erat sed, posuere scelerisque eros. Sed libero neque, venenatis faucibus suscipit at, mattis vitae eros. Vivamus et tincidunt risus. Donec vel nisl purus. Duis elementum ante justo, in tincidunt leo aliquam quis. Suspendisse a ante eget sem euismod finibus sit amet at sem. Praesent vel enim nec tellus fringilla sollicitudin. Nullam imperdiet enim vel accumsan volutpat. Ut aliquet orci pharetra nibh egestas ultricies. Vivamus arcu lacus, mattis ac elit ut, pulvinar hendrerit est. Nulla vel mi eget sapien posuere mollis vitae sit amet lorem.\n \n  Cras vel nibh tristique nunc volutpat mollis. Vestibulum a feugiat orci. Vestibulum vehicula fringilla ultrices. Maecenas nec tincidunt enim. Proin tincidunt tincidunt feugiat. Nunc sit amet leo a tortor mattis varius. In placerat dolor in velit luctus, ac placerat augue interdum. Aliquam fringilla interdum ante et ullamcorper. Donec maximus auctor faucibus. Praesent dapibus ligula libero, ac finibus enim viverra varius. Suspendisse lobortis odio at ante vulputate, mollis malesuada leo eleifend. Donec id orci nec nulla vehicula gravida. Quisque ut orci pharetra, ultricies massa in, posuere velit."
+    }
+  }
+}
