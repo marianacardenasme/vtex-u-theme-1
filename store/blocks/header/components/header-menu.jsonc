@@ -1,0 +1,82 @@
+{
+    "drawer#header__mobile--menu":{
+        "children": ["menu#header_menu"],
+        "blocks": ["drawer-trigger"]
+    },
+    "drawer-trigger": {
+        "children": ["rich-text#menu"]
+    },
+    "rich-text#menu": {
+        "props": {
+            "text": "Menú"
+        }
+    },
+    "menu#header_menu": {
+        "children": ["menu-item#department__one", "menu-item#department__two"],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    "menu-item#department__one": {
+        "props": {
+            "id": "department-one",
+            "type": "custom",
+            "itemProps": {
+                "type": "external",
+                "href": "https://www.google.com/",
+                "noFollow": true,
+                "tagTitle": "Google Title",
+                "text": "Google"
+            }
+        },
+        "blocks": ["submenu.accordion#department__one"]
+    },
+    "submenu.accordion#department__one": {
+        "children": ["menu#department__one"]
+    },
+    "menu#department__one": {
+        "children": ["menu-item#category__one", "menu-item#category__two"],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    "menu-item#category__one" : {
+        "props": {
+            "id": "category-one",
+            "type": "custom",
+            "itemProps": {
+                "type": "external",
+                "href": "/",
+                "noFollow": true,
+                "tagTitle": "Google Drive",
+                "text": "Google Drive"
+            }
+        }
+    },
+    "menu-item#category__two" : {
+        "props": {
+            "id": "category-two",
+            "type": "custom",
+            "itemProps": {
+                "type": "external",
+                "href": "/",
+                "noFollow": true,
+                "tagTitle": "Google Meet",
+                "text": "Google Meet"
+            }
+        }
+    },
+    "menu-item#department__two": {
+        "props": {
+            "id": "department-two",
+            "type": "custom",
+            "itemProps": {
+                "type": "external",
+                "href": "https://www.bing.com/?setlang=es",
+                "noFollow": true,
+                "tagTitle": "Bing Title",
+                "text": "Bing"
+            }
+        }
+    }
+}

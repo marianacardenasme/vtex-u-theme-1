@@ -1,0 +1,11 @@
+{
+    "rich-text#home__container--texto": { 
+    "title": "Texto de home",
+    "props": { 
+      "text": "VTEX Store Framework",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  }
+}

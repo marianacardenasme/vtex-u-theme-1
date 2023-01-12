@@ -1,0 +1,162 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text#home__container--texto",
+      "image#home__container--image",
+      //"link#home__link--ancla",
+      //"link#home__link--boton",
+      //"slider-layout#home__slider--children",
+      //"slider-layout#home__slider--children",
+      "list-context.image-list#home__slider--list",
+      // "modal-trigger#home__modal--children",
+      // "modal-trigger#home__modal--event",
+      "icon#home__orders--icon",
+      "search-result-layout.customQuery#home__search"
+    ]
+  },
+  "slider-layout#home__slider--children": {
+    "title": "slider con hijos declarados",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "mobile":1
+      },
+      "infinite": true,
+      "blockClass": "home__slider",
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      }
+    },
+    "children": [
+      //"flex-layout.row#home__slider--zero",
+      "image#home__slider--one",
+      "image#home__slider--two",
+      "image#home__slider--three"
+    ]
+  },
+  "image#home__slider--one": {
+    "props": {
+      "src": "assets/img/main-slide-1.jpg"
+    }
+  },
+  "image#home__slider--two": {
+    "props": {
+      "src": "assets/img/main-slide-2.jpg"
+    }
+  },
+  "image#home__slider--three": {
+    "props": {
+      "src": "assets/img/main-slide-3.jpg"
+    }
+  },
+  // "flex-layout.row#home__slider--zero": {
+  //   "children": [
+  //     "flex-layout.col#home__slider--zero"
+  //   ]
+  // },
+  // "flex-layout.col#home__slider--zero": {
+  //   "children": [
+  //     "image#home__slider--one",
+  //     "rich-text#test"
+  //   ]
+  // },
+  // "rich-text#test": {
+  //   "props": {
+  //     "text": "Mi call to action es muy genial"
+  //   }
+  // }
+  "list-context.image-list#home__slider--list": {
+    "children": ["slider-layout#home__slider--list"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/img/main-slide-1.jpg",
+          "description": "slide 1"
+        },
+        {
+          "image": "assets/img/main-slide-2.jpg",
+          "description": "slide 2"
+        },
+        {
+          "image": "assets/img/main-slide-3.jpg",
+          "description": "slide 3"
+        }
+      ]
+    }
+  },
+  "slider-layout#home__slider--list":{
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  "image#home__container--image":{
+    "props": {
+      "src": "assets/img/b2b-commerce-cover-desktop-1.jpg"
+    }
+  },
+  "icon#home__orders--icon": {
+    "props": {
+      "id": "marianaorders",
+      "size": 60
+    }
+  },
+  "search-result-layout.customQuery#home__search": {
+    "blocks": [
+      "search-result-layout.desktop#home_search--desktop", 
+      "search-result-layout.mobile#home_search--mobile",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+  "search-result-layout.desktop#home_search--desktop": {
+    "children": [
+      "rich-text#test"
+    ]
+  },
+  "rich-text#test": { 
+    "title": "Texto de prueba",
+    "props": { 
+      "text": "Este es un mensaje de prueba",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "search-result-layout.mobile#home_search--mobile": {
+    "children": [
+      "flex-layout.row#home__result"
+    ]
+  },
+  "flex-layout.row#home__result": {
+    "children": [
+      "flex-layout.col#home__results--search"
+    ]
+  },
+  "flex-layout.col#home__results--search": {
+    "children": [
+      "search-content#home__results--search"
+    ]
+  },
+  "search-content#home__results--search":{
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
+  },
+  "gallery": {
+    "blocks": ["product-summary.shelf"]
+  }
+}

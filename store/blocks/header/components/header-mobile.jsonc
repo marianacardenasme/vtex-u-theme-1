@@ -1,0 +1,67 @@
+{
+    "header-layout.mobile": {
+        "title": "Header Mobile",
+        "children": ["header-row#header__top", "header-row#header__middle"]
+    },
+    "header-row#header__top": {
+        "title": "Header superior",
+        "children": [
+            "logo#header__top--logo",
+            "header-spacer",
+            "login",
+            "modal-trigger#header__top--login",
+            "minicart.v2"
+        ],
+        "props": {
+            "blockClass": "header__top"
+        }
+    },
+    "logo#header__top--logo": {
+        "title": "Logo",
+        "props": {
+            "url": "assets/img/vtex-white-logo.svg",
+            "width": 120,
+            "href": "/"
+        }
+    },
+    "modal-trigger#header__top--login": {
+        "children": [
+            "rich-text#header__top--login",
+            "modal-layout#header__top--login"
+        ]
+    },
+    "rich-text#header__top--login": {
+        "props": {
+            "text": "login"
+        }
+    },
+    "modal-layout#header__top--login": {
+        "children": ["login-content"]
+    },
+    "login": {
+        "props": {
+            "emailAndPasswordTitle": "LOG-IN",
+            "accessCodeTitle": "Acess Code LOG-IN",
+            "emailPlaceholder": "e-mail",
+            "passwordPlaceholder": "password",
+            "showPasswordVerificationIntoTooltip": true,
+            "showIconProfile": true
+        }
+    },
+    "header-row#header__middle": {
+        "title": "Header medio",
+        "children": [
+            "drawer#header__mobile--menu",
+            "search-bar#header__search"
+        ],
+        "props": {
+            "blockClass": "header__middle"
+        }
+    },
+    "search-bar#header__search": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+        "openAutocompleteOnFocus": true
+        }
+    }
+}
