@@ -3,11 +3,8 @@
     "blocks": [
       "rich-text#home__container--texto",
       "image#home__container--image",
-      //"link#home__link--ancla",
-      //"link#home__link--boton",
-      //"slider-layout#home__slider--children",
-      //"slider-layout#home__slider--children",
-      "list-context.image-list#home__slider--list",
+      "slider-layout#home__slider--children",
+      //"list-context.image-list#home__slider--list",
       // "modal-trigger#home__modal--children",
       // "modal-trigger#home__modal--event",
       "icon#home__orders--icon",
@@ -30,7 +27,6 @@
       }
     },
     "children": [
-      //"flex-layout.row#home__slider--zero",
       "image#home__slider--one",
       "image#home__slider--two",
       "image#home__slider--three"
@@ -51,22 +47,6 @@
       "src": "assets/img/main-slide-3.jpg"
     }
   },
-  // "flex-layout.row#home__slider--zero": {
-  //   "children": [
-  //     "flex-layout.col#home__slider--zero"
-  //   ]
-  // },
-  // "flex-layout.col#home__slider--zero": {
-  //   "children": [
-  //     "image#home__slider--one",
-  //     "rich-text#test"
-  //   ]
-  // },
-  // "rich-text#test": {
-  //   "props": {
-  //     "text": "Mi call to action es muy genial"
-  //   }
-  // }
   "list-context.image-list#home__slider--list": {
     "children": ["slider-layout#home__slider--list"],
     "props": {

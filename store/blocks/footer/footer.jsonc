@@ -1,0 +1,153 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": { 
+    "children": [
+      "disclosure-layout-group#footer__menu--group"
+    ]
+  },
+  "footer-layout.mobile": { 
+    "children": [
+      "disclosure-layout-group#footer__menu--group"
+    ]
+  },
+  "disclosure-layout-group#footer__menu--group": {
+  "children": [
+      "disclosure-layout#policies",
+      "disclosure-layout#about-us",
+      "disclosure-layout#socials"
+    ]
+  },
+  "disclosure-layout#policies": {
+    "children": [
+      "disclosure-trigger#policies",
+      "disclosure-content#policies"
+    ]
+  },
+  "disclosure-trigger#policies": {
+    "children": ["rich-text#policies"]
+  },
+  "rich-text#policies": {
+    "props": {
+      "title": "Políticas de la tienda"
+    }
+  },
+  "disclosure-content#policies": {
+    "children": ["menu#policies"]
+  },
+  "menu#policies": {
+    "children": [
+      "menu-item#terms-and-conditions",
+      "menu-item#privacy-policies"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#terms-and-conditions": {
+    "props": {
+      "id": "menu-terms-and-conditions",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+  "menu-item#privacy-policies": {
+    "props": {
+      "id": "menu-privacy-policies",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Políticas de privacidad",
+        "text": "Políticas de privacidad"
+      }
+    }
+  },
+  "disclosure-layout#about-us": {
+    "children": [
+      "disclosure-trigger#policies",
+      "disclosure-content#policies"
+    ]
+  },
+  "disclosure-trigger#about-us": {
+    "children": ["rich-text#about-us"]
+  },
+  "rich-text#about-us": {
+    "props": {
+      "title": "Políticas de la tienda"
+    }
+  },
+  "disclosure-content#about-us": {
+    "children": ["menu#about-us"]
+  },
+  "menu#about-us": {
+    "children": [
+      "menu-item#about-us",
+      "menu-item#our-shops"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-about-us",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Acerca de nosotros",
+        "text": "Acerca de nosotros"
+      }
+    }
+  },
+  "menu-item#our-shops": {
+    "props": {
+      "id": "menu-our-shops",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Políticas de privacidad",
+        "text": "Políticas de privacidad"
+      }
+    }
+  },
+  "disclosure-layout#socials": {
+    "children": [
+      "social-networks",
+      "accepted-payment-methods"
+    ]
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "url": "https://facebook.com/exito",
+          "name": "facebook"
+        },
+        {
+          "url": "https://twitter.com/exito",
+          "name": "twitter"
+        },
+        {
+          "url": "https://youtube.com/exito",
+          "name": "youtube"
+        }
+      ]
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["mastercard", "visa", "diners club"]
+    }
+  }
+
+
+}

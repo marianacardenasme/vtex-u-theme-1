@@ -1,0 +1,21 @@
+{
+    "flex-layout.row#product__info": {
+        "title": "informacion general de PDP",
+        "children": [
+            "flex-layout.col#product__info--image",
+            "flex-layout.col#product__info--data"
+        ]
+    },
+    "flex-layout.col#product__info--image": {
+        "title": "imagenes de PDP",
+        "children": [
+            "product-images"        ]
+    },
+    "flex-layout.col#product__info--data": {
+        "title": "data de producto",
+        "children": [
+            "vtex.product-list:product-name",
+            "vtex.product-list:product-quantity"
+        ]
+    }
+}

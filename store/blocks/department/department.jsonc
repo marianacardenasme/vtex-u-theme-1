@@ -1,0 +1,55 @@
+{
+      "search-result-layout#deparment": {
+        "blocks": [
+          "search-result-layout.desktop#deparment",
+          "search-result-layout.mobile#deparment",
+            "search-not-found-layout"
+        ]
+      },
+      "search-result-layout.desktop#deparment": {
+        "children": [
+          "flex-layout.row#department__breadcrumb"
+        ]
+      },
+      "flex-layout.row#department__breadcrumb": {
+        "children": [
+            "flex-layout.col#department__breadcrumb"
+        ]
+      },
+      "flex-layout.col#department__breadcrumb": {
+        "children": [
+            "breadcrumb.search"
+        ]
+      },
+
+      "search-result-layout.mobile#deparment": {
+        "children": [
+          "flex-layout.row#department__breadcrumb",
+          "flex-layout.row#department__results"
+        ]
+      },
+      "flex-layout.row#department__results": {
+        "title": "Department results",
+        "children": [
+            "gallery-layout-switcher"
+        ]
+      },
+      "gallery-layout-switcher": {
+        "children": [
+            "gallery-layout-option#grid__two-columns",
+            "gallery-layout-option#grid__one-column"
+        ]
+      },
+      "gallery-layout-option#grid__two-columns": {
+        "props": {
+            "name": "grid-two-columns",
+            "blockClass": ["grid__selector--two-columns"]
+        }
+      },
+      "gallery-layout-option#grid__one-column": {
+        "props": {
+            "name": "grid-one-column",
+            "blockClass": ["grid__selector--one-column"]
+        }
+      }
+}

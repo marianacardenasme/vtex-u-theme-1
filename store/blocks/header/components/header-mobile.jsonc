@@ -51,11 +51,11 @@
     "header-row#header__middle": {
         "title": "Header medio",
         "children": [
-            "drawer#header__mobile--menu",
-            "search-bar#header__search"
+            "search-bar#header__search",
+            "drawer#header__mobile--menu"
         ],
         "props": {
-            "blockClass": "header__middle"
+            "blockClass": "header__middle" 
         }
     },
     "search-bar#header__search": {
@@ -63,5 +63,110 @@
         "props": {
         "openAutocompleteOnFocus": true
         }
-    }
+    },
+    "minicart.v2": {
+        "children": ["minicart-base-content"],
+        "props": {
+            "MinicartIcon": "icon#home__orders--icon",
+            "intemCountMode": "total",
+            "quantityDisplay": "always"
+        }
+    },
+    "minicart-base-content": {
+        "blocks": ["minicart-empty-state"],
+        "children": [
+            "minicart-product-list",
+            "flex-layout.row#minicart__footer"
+        ]
+    },
+    "minicart-empty-state": {
+        "children": [
+            "flex-layout.row#minicart__empty"
+        ]
+    },
+    "flex-layout.row#minicart__empty": {
+        "children": [
+            "flex-layout.col#minicart__empty"
+        ]
+    },
+    "flex-layout.col#minicart__empty": {
+        "children": [
+            "icon-cart#minicart__empty--icon",
+            "rich-text#minicart__empty--text"
+        ]
+    },
+    "icon-cart#minicart__empty--icon": {
+        "props": {
+            "size": 40
+        }
+    },
+    "rich-text#minicart__empty--text": {
+        "props": {
+            "text": "El carrito se encuentra vacío, te invitamos a llenarlo",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "minicart-product-list": {
+        "blocks": [
+            "product-list#minicart"
+        ]
+    },
+    "product-list#minicart":{
+        "blocks": [
+            "product-list-content-mobile"
+        ]
+    },
+    "product-list-content-mobile": {
+        "children": [
+            "flex-layout.row#minicart__row--mobile"
+        ]
+    },
+    "flex-layout.row#minicart__row--mobile": {
+        "children": [
+            "flex-layout.col#minicart__row--image",
+            "flex-layout.col#minicart__col--info",
+            "flex-layout.col#minicart__col--remove"
+        ]
+    },
+    "flex-layout.col#minicart__row--image": {
+        "children": [
+            "product-list-image"
+        ]
+    },
+    "flex-layout.col#minicart__col--info": {
+        "children": [
+            "vtex.product-list:product-name",
+            "quantity-selector#minicart",
+            "price"
+        ]
+    },
+    "quantity-selector#minicart": {
+        "props": {
+            "mode": "stepper"
+        }
+    },
+    "flex-layout.col#minicart__col--remove": {
+        "children": [
+            "remove-button"
+        ]
+    },
+    "flex-layout.row#minicart__footer": {
+        "children": [
+            "flex-layout.col#minicart__footer"
+        ]
+    },
+    "flex-layout.col#minicart__footer": {
+        "children": [
+            "minicart-summary",
+            "rich-text#promo",
+            "minicart-checkout-button",
+            "drawer-close-button"
+        ]
+    },
+    "rich-text#promo": {
+        "props": {
+            "text": "No olvides participar en las promociones del día sin IVA"
+        }
+    }    
 }

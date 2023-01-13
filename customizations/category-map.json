@@ -1,0 +1,151 @@
+{
+    "data": {
+      "categories": [
+        {
+          "id": 1,
+          "name": "Accesorios",
+          "href": "/accesorios",
+          "children": [
+            {
+              "id": 2,
+              "name": "billeteras",
+              "href": "/accesorios/billeteras"
+            },
+            {
+              "id": 3,
+              "name": "bisuteria",
+              "href": "/accesorios/bisuteria"
+            },
+            {
+              "id": 4,
+              "name": "bolsos",
+              "href": "/accesorios/bolsos"
+            },
+            {
+              "id": 5,
+              "name": "bolsos",
+              "href": "/accesorios/bolsos"
+            },
+            {
+              "id": 6,
+              "name": "Cinturones",
+              "href": "/accesorios/cinturones"
+            },
+            {
+              "id": 7,
+              "name": "cosmeticos",
+              "href": "/accesorios/cosmeticos"
+            },
+            {
+              "id": 8,
+              "name": "Cuellos",
+              "href": "/accesorios/cuellos"
+            },
+            {
+              "id": 9,
+              "name": "estolas y bufandas",
+              "href": "/accesorios/estolas-y-bufandas"
+            },
+            {
+              "id": 10,
+              "name": "Gafas",
+              "href": "/accesorios/gafas"
+            },
+            {
+              "id": 11,
+              "name": "Llaveros",
+              "href": "/accesorios/llaveros"
+            },
+            {
+              "id": 12,
+              "name": "Lunch",
+              "href": "/accesorios/lunch"
+            },
+            {
+              "id": 13,
+              "name": "Medias",
+              "href": "/accesorios/medias"
+            },
+            {
+              "id": 14,
+              "name": "Reloj",
+              "href": "/accesorios/reloj"
+            },
+            {
+              "id": 15,
+              "name": "Tapabocas",
+              "href": "/accesorios/tapabocas"
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "name": "Ropa",
+          "href": "/ropa",
+          "children": [
+            {
+              "id": 34,
+              "name": "blusas",
+              "href": "/ropa/blusas"
+            },
+            {
+              "id": 35,
+              "name": "camisas",
+              "href": "/ropa/camisas"
+            },
+            {
+              "id": 36,
+              "name": "camisetas",
+              "href": "/ropa/camisetas"
+            },
+            {
+              "id": 37,
+              "name": "chalecos",
+              "href": "/ropa/chalecos"
+            },
+            {
+              "id": 38,
+              "name": "chaquetas",
+              "href": "/ropa/chaquetas"
+            },
+            {
+              "id": 39,
+              "name": "faldas",
+              "href": "/ropa/faldas"
+            },
+            {
+              "id": 40,
+              "name": "jeans",
+              "href": "/ropa/jeans"
+            },
+            {
+              "id": 41,
+              "name": "Pantalones",
+              "href": "/ropa/pantalones"
+            },
+            {
+              "id": 42,
+              "name": "Shorts y bermudas",
+              "href": "/ropa/shorts-y-bermudas"
+            },
+            {
+              "id": 43,
+              "name": "sweaters",
+              "href": "/ropa/sweaters"
+            },
+            {
+              "id": 44,
+              "name": "vestidos",
+              "href": "/ropa/vestidos"
+            }
+          ]
+        },
+        {
+          "id": 45,
+          "name": "Tarjetas de regalo",
+          "href": "/tarjetas-de-regalo",
+          "children": []
+        }
+      ]
+    }
+  }
