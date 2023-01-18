@@ -9,13 +9,33 @@
     "flex-layout.col#product__info--image": {
         "title": "imagenes de PDP",
         "children": [
-            "product-images"        ]
+            "product-images#product__info--image"        
+        ]
+    },
+    "product-images#product__info--image": {
+        "title": "imágenes",
+        "props": {
+            "displayTumbnailsArrows": true,
+            "aspectRatio": "1:1",
+            "zoomMode": "open-modal"
+        }
     },
     "flex-layout.col#product__info--data": {
         "title": "data de producto",
         "children": [
-            "vtex.product-list:product-name",
-            "vtex.product-list:product-quantity"
+            "share",
+            "vtex.store-components:product-name",
+            "vtex.store-components:product-brand",
+            "product-rating-inline",
+            "product-quantity",
+            "rich-text#product__promo--info",
+            "product-description"
         ]
+    },
+    "rich-text#product__promo--info": {
+        "title": "texto adicional",
+        "props": {
+            "text": " "
+        }
     }
 }

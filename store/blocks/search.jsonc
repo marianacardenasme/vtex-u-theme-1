@@ -80,8 +80,7 @@
   "flex-layout.col#quick-view__modal--info": {
     "children": [
       "vtex.product-list:product-name",
-      "vtex.product-list:product-brand",
-      "share"
+      "vtex.product-list:product-brand"
     ]
   }
 

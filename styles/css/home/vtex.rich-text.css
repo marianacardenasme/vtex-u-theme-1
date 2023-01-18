@@ -1,3 +1,8 @@
 .paragraph--section__one--title {
     color: white
 }
+
+.listItem--home__list:nth-child(1n) {
+    background: green;
+    color: white;
+}

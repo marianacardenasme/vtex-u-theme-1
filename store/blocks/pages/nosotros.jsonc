@@ -1,0 +1,68 @@
+{
+    "store.custom#nosotros": {
+        "blocks": [
+            "flex-layout.row#nosotros__seccion--uno",
+            "flex-layout.row#nosotros__seccion--dos",
+            "flex-layout.row#nosotros__seccion--tres"
+        ]
+    },
+    "flex-layout.row#nosotros__seccion--uno": {
+        "children": [
+            "flex-layout.col#nosotros__seccion--uno"
+        ]
+    },
+    "flex-layout.row#nosotros__seccion--dos": {
+        "children": [
+            "flex-layout.col#nosotros__seccion--dos"
+        ]
+    },
+    "flex-layout.row#nosotros__seccion--tres": {
+        "children": [
+            "flex-layout.col#nosotros__seccion--tres"
+        ]
+    },
+    "flex-layout.col#nosotros__seccion--uno": {
+        "children": [
+            "slider-layout#home__slider--children"
+        ]
+    },
+    "flex-layout.col#nosotros__seccion--dos": {
+        "children": [
+            "search-result-layout.customQuery#home__search"
+        ]
+    },
+    "flex-layout.col#nosotros__seccion--tres": {
+        "children": [
+            "rich-text#seccion__tres--texto",
+            "link#seccion__tres--cta",
+            "info-card#seccion__tres--infocard"
+        ]
+    },
+    "rich-text#seccion__tres--texto": {
+        "props": {
+            "text": "miau"
+        }
+    },
+    "link#seccion__tres--cta": {
+        "children": [
+            "info-card#seccion__tres--infocard"
+        ],
+        "props": {
+            "href": "/"
+        }
+    },         
+    "info-card#seccion__tres--infocard": {
+        "props": {
+            "id": "info-card-example",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+            "headline": "Clearance Sale",
+            "subhead": "venta realizada con fines benéficos",
+            "callToActionText": "DISCOVER",
+            "callToActionUrl": "/sale/d",
+            "blockClass": "info-card-example",
+            "textAlignment": "center"
+          }
+    } 
+}

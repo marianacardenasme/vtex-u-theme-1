@@ -1,0 +1,3 @@
+.infoCardCallActionContainer--info-card-example :global(.vtex-button) {
+    background-color: blueviolet;
+}

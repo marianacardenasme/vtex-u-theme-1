@@ -3,6 +3,8 @@
     "blocks": [
       "rich-text#home__container--texto",
       "image#home__container--image",
+      "rich-text#home__list",
+      "rich-text#home__list2",
       "slider-layout#home__slider--children",
       //"list-context.image-list#home__slider--list",
       // "modal-trigger#home__modal--children",
@@ -103,7 +105,7 @@
   },
   "search-result-layout.desktop#home_search--desktop": {
     "children": [
-      "rich-text#test"
+      "flex-layout.row#home__result"
     ]
   },
   "rich-text#test": { 
@@ -138,5 +140,17 @@
   },
   "gallery": {
     "blocks": ["product-summary.shelf"]
+  },
+  "rich-text#home__list": {
+    "props": {
+      "blockClass": "home__list",
+      "text": " - Lista 1 \n - Lista 2 \n - Lista 3"
+    }
+  },
+  "rich-text#home__list2": {
+    "props": {
+      "blockClass": "home__list2",
+      "text": " - Lista 1 \n - Lista 2 \n - Lista 3"
+    }
   }
 }
