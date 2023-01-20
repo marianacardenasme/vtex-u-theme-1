@@ -54,7 +54,9 @@
     "vtex.disclosure-layout": "1.x",
     "vtex.product-list": "0.x",
     "vtex.product-price": "1.x",
-    "vtex.store-link": "0.x"
+    "vtex.store-link": "0.x",
+    "vtexiosprueba2022.whatsapp-button": "0.x",
+    "vtexiosprueba2022.bullets-diagram": "0.x"
   },
   "peerDependencies": {
     "vtex.questions-and-answers": "0.x"

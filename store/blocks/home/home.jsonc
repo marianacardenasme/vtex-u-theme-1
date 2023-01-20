@@ -1,17 +1,26 @@
 {
   "store.home": { 
     "blocks": [
+      "whatsapp-button",
       "rich-text#home__container--texto",
       "image#home__container--image",
       "rich-text#home__list",
       "rich-text#home__list2",
       "slider-layout#home__slider--children",
+      "list-context.bullet-group",
       //"list-context.image-list#home__slider--list",
       // "modal-trigger#home__modal--children",
       // "modal-trigger#home__modal--event",
       "icon#home__orders--icon",
       "search-result-layout.customQuery#home__search"
     ]
+  },
+  "whatsapp-button": {
+    "props": {
+      "logo": "assets/img/whatsapp-logo.png",
+      "phone": "3205029426",
+      "message": "vtex phone"
+    }
   },
   "slider-layout#home__slider--children": {
     "title": "slider con hijos declarados",
@@ -82,6 +91,17 @@
   "image#home__container--image":{
     "props": {
       "src": "assets/img/b2b-commerce-cover-desktop-1.jpg"
+    }
+  },
+  "list-context.bullet-group":{
+    "props": {
+      "bullets": {
+        "image": "miimagen.png",
+        "titleBullet": "Computadores",
+        "link": {
+          "url": "/"
+        }
+      }
     }
   },
   "icon#home__orders--icon": {
