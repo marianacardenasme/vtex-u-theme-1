@@ -22,6 +22,16 @@
       "message": "vtex phone"
     }
   },
+  "modal-trigger#example": {
+    "children": [
+      "rich-text#example"
+    ]
+  },
+  "rich-text#example": {
+    "props": {
+      "text": "Soy un ejemplo"
+    }
+  },
   "slider-layout#home__slider--children": {
     "title": "slider con hijos declarados",
     "props": {
@@ -94,14 +104,77 @@
     }
   },
   "list-context.bullet-group":{
+    "title": "mi contexto de lista de bullets",
+    "children": ["slider-layout#bullet-group"],
     "props": {
-      "bullets": {
-        "image": "miimagen.png",
-        "titleBullet": "Computadores",
-        "link": {
-          "url": "/"
+      "bullets": [
+        {
+          "image": "assets/img/portatil.png",
+          "titleBullet": "Computadores",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/img/ropa.png",
+          "titleBullet": "Ropa",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/img/portatil.png",
+          "titleBullet": "Computadores",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/img/ropa.png",
+          "titleBullet": "Ropa",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/img/portatil.png",
+          "titleBullet": "Computadores",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/img/ropa.png",
+          "titleBullet": "Ropa",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/img/portatil.png",
+          "titleBullet": "Computadores",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/img/ropa.png",
+          "titleBullet": "Ropa",
+          "link": {
+            "url": "/"
+          }
         }
-      }
+      ]
+    }
+  },
+  "slider-layout#bullet-group": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 5,
+        "mobile": 5
+      },
+      "infinite": true
     }
   },
   "icon#home__orders--icon": {
