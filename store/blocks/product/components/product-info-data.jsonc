@@ -29,13 +29,36 @@
             "product-rating-inline",
             "product-quantity",
             "rich-text#product__promo--info",
-            "product-description"
+            "product-description",
+            "availability-subscriber",
+            "add-to-cart-button",
+            "modal-trigger#add-to-cart-info"
         ]
     },
     "rich-text#product__promo--info": {
         "title": "texto adicional",
         "props": {
             "text": " "
+        }
+    },
+    "modal-trigger#add-to-cart-info": {
+        "children": [
+            "modal-layout#add-to-cart-info"
+        ],
+        "props": {
+            "customPixelEventName": "addToCart"
+        }
+    },
+    "modal-layout#add-to-cart-info": {
+        "children": [
+            "modal-header#add-to-cart-info",
+            "add-to-cart-info"
+        ]        
+    },
+    "modal-header#add-to-cart-info": {
+        "props": {
+            "showCloseButton": true,
+            "iconCloseSize": 24
         }
     }
 }

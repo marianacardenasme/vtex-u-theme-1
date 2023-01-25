@@ -1,0 +1,7 @@
+.bullet__item--title {
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 10px;
+    text-decoration: none;
+    background-color: var(--main-background);
+}

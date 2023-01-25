@@ -1,0 +1,8 @@
+.flexRowContent--home__section--one {
+    background-color: brown;
+}
+
+.flexRow {
+    --main-text-color: green;
+    --main-background: black;
+}

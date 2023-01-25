@@ -1,9 +1,0 @@
-.button {
-    margin: 10px;
-    background-color: blueviolet;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    flex-direction: column;
-}

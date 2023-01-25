@@ -7,7 +7,7 @@
       "rich-text#home__list",
       "rich-text#home__list2",
       "slider-layout#home__slider--children",
-      "list-context.bullet-group",
+      "flex-layout.row#bullets",
       //"list-context.image-list#home__slider--list",
       // "modal-trigger#home__modal--children",
       // "modal-trigger#home__modal--event",
@@ -102,6 +102,9 @@
     "props": {
       "src": "assets/img/b2b-commerce-cover-desktop-1.jpg"
     }
+  },
+  "flex-layout.row#bullets": {
+    "children": ["list-context.bullet-group"]
   },
   "list-context.bullet-group":{
     "title": "mi contexto de lista de bullets",
