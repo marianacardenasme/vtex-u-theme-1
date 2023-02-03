@@ -9,6 +9,7 @@
             "logo#header__top--logo",
             "header-spacer",
             "login",
+            "department-search",
             "modal-trigger#header__top--login",
             "minicart.v2"
         ],
