@@ -2,6 +2,7 @@
   "store.home": { 
     "blocks": [
       "whatsapp-button",
+      "pdf-reader",
       "rich-text#home__container--texto",
       "image#home__container--image",
       "rich-text#home__list",
@@ -20,6 +21,13 @@
       "logo": "assets/img/whatsapp-logo.png",
       "phone": "3205029426",
       "message": "vtex phone"
+    }
+  },
+  "pdf-reader":{
+    "props": {
+      "pdfUrl": "assets/documents/trial.pdf",
+      "width": 500,
+      "height": 500
     }
   },
   "modal-trigger#example": {
