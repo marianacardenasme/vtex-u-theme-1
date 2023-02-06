@@ -1,8 +1,10 @@
 {
   "store.home": { 
     "blocks": [
+      "custom-grid",
+      "quick-order",
       "whatsapp-button",
-      "pdf-reader",
+      //"pdf-reader",
       "rich-text#home__container--texto",
       "image#home__container--image",
       "rich-text#home__list",
@@ -16,6 +18,51 @@
       "search-result-layout.customQuery#home__search"
     ]
   },
+  "custom-grid": {
+    "children": [
+      "rich-text#custom-grid-1",
+      "rich-text#custom-grid-2",
+      "rich-text#custom-grid-3",
+      "flex-layout.row#custom-grid-4"
+    ]
+  },
+  "rich-text#custom-grid-1": {
+    "props": {
+      "text": "Grilla 1"
+    }
+  },
+  "rich-text#custom-grid-2": {
+    "props": {
+      "text": "Grilla 2"
+    }
+  },
+  "rich-text#custom-grid-3": {
+    "props": {
+      "text": "Grilla 3"
+    }
+  },
+  "flex-layout.row#custom-grid-4": {
+    "children": [
+      "flex-layout.col#custom-grid-4"
+    ]
+  },
+  "flex-layout.col#custom-grid-4": {
+    "children": [
+      "rich-text#custom-grid-4",
+      "image#home__cat"
+    ]
+  },
+  "image#home__cat": {
+    "props": {
+      "src": "assets/img/gato_02.jpg",
+      "maxWidth": 200
+    }
+  },
+  "rich-text#custom-grid-4": {
+    "props": {
+      "text": "Grilla 4"
+    }
+  },
   "whatsapp-button": {
     "props": {
       "logo": "assets/img/whatsapp-logo.png",
@@ -23,13 +70,13 @@
       "message": "vtex phone"
     }
   },
-  "pdf-reader":{
-    "props": {
-      "pdfUrl": "assets/documents/trial.pdf",
-      "width": 500,
-      "height": 500
-    }
-  },
+  // "pdf-reader":{
+  //   "props": {
+  //     "pdfUrl": "assets/documents/trial.pdf",
+  //     "width": 500,
+  //     "height": 500
+  //   }
+  // },
   "modal-trigger#example": {
     "children": [
       "rich-text#example"
